@@ -6,14 +6,60 @@
      <link href="./output.css" rel="stylesheet">
     <title>Tailwind</title>
 </head>
-<body class="bg-gray-950">
-    <nav>
-        <ul class="bg-amber-950 text-amber-50 flex m-0">
-            <li class="flex"><a class="p-3 hover:text-amber-300" href="#home">Home</a></li>
-            <li class="flex"><a class="p-3 hover:text-amber-300" href="#about">About</a></li>
-            <li class="flex"><a class="p-3 hover:text-amber-300" href="#contact">Contact</a></li>
-            <li class="flex"><a class="p-3 hover:text-amber-300" href="#pricing">Pricing</a></li>
+<body class="bg-gray-950 m-0">
+         <h1 class="bg-amber-400 text-black">hello</h1>
+        <ul class="bg-blue-950 text-blue-50 flex">
+            <li class="flex"><a class="p-3 hover:text-blue-300" href="#home">Home</a></li>
+            <li class="flex"><a class="p-3 hover:text-blue-300" href="#about">About</a></li>
+            <li class="flex"><a class="p-3 hover:text-blue-300" href="#contact">Contact</a></li>
+            <li class="flex"><a class="p-3 hover:text-blue-300" href="#pricing">Pricing</a></li>
         </ul>
-    </nav>
+            <div class="text-black bg-yellow-300 mt-2 p-3">hello there!</div>
+            <!-- <div class="size-20 bg-amber-200 text-center pt-6 mt-5">Square</div> -->  <!---size-x >> h-x,w-x-->
+            <div class="h-[300px] bg-[url(https://avatars.githubusercontent.com/u/153535030?v=4)] bg-no-repeat bg-contain bg-center">
+            </div>
+            <div class="flex">
+                <div>
+            <h2 class="text-white">gradient</h2>
+            <div class="size-20 bg-gradient-to-tr from-indigo-300 to-blue-500"></div>
+             </div>
+             <div>
+            <h2 class="text-white">shadow</h2>
+            <div class="size-20 bg-amber-950 shadow-inner shadow-fuchsia-200 hover:shadow-2xs"></div>
+            </div>
+            </div>
+            <h2 class="text-white">Blur</h2>
+            <div class="flex">
+            <img class="size-[100px] overflow-auto" src="https://avatars.githubusercontent.com/u/153535030?v=4" alt="">
+            <img class="size-[100px] overflow-auto blur-xl" src="https://avatars.githubusercontent.com/u/153535030?v=4" alt="">
+            </div>
+
+            <h2 class="text-white">brightness</h2>
+            <div class="flex">
+            <img class="size-[100px] overflow-auto brightness-50" src="https://avatars.githubusercontent.com/u/153535030?v=4" alt="">
+            <img class="size-[100px] overflow-auto brightness-200" src="https://avatars.githubusercontent.com/u/153535030?v=4" alt="">
+            </div>
+ 
+            <h2 class="text-white">Contrast</h2>
+            <div class="flex">
+             <img class="size-[100px] overflow-auto contrast-50" src="https://avatars.githubusercontent.com/u/153535030?v=4" alt="">
+            <img class="size-[100px] overflow-auto contrast-200" src="https://avatars.githubusercontent.com/u/153535030?v=4" alt="">
+            </div>
+            <!-- similarly there is hue,ivert, grayscale etc..    -->
+
+            <h2 class="text-white">Interactivity</h2>
+            <button class="bg-indigo-400 rounded-4xl text-shadow-zinc-200 py-2 px-14 m-5 font-bold
+                             hover:bg-indigo-700
+                             active:bg-indigo-950
+                              focus:bg-amber-800">
+                              Subscribe</button>
+
+     <div class="columns-4 bg-gray-50">
+        <h1 class="bg-amber-400">hi</h1>
+        <h1 class="bg-indigo-500">hi</h1>
+        <h1 class="bg-fuchsia-400">hi</h1>
+        <h1 class="bg-teal-400">hi</h1>
+    </div>
+            
 </body>
 </html>
