@@ -1,0 +1,8 @@
+Thora theory about directives in CSS
+
+
+ /* customization using layer directive on @tailwind base */
+ /* actually tailwind contains three files
+ @tailwind base--->contains the default custom style given by tailwind
+ @tailwind components---->style given by tailwind on the components
+ @tailwind utilities----->jo hm use krte hae eg bg-white yesb ka defintion file */

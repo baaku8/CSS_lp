@@ -4,5 +4,36 @@
     --breakpoint-mob:700px;
     --breakpoint-pc:1920px;  
     --padding-newp:4px;
-    --padding-newp2:8px;            
+    --padding-newp2:8px; 
+    --bg-pale:#212121;           
 }
+
+ @custom-variant dark (&:where(.dark, .dark *));
+
+
+ /* customization using layer directive on @tailwind base */
+ /* actually tailwind contains three files
+ @tailwind base--->contains the default custom style given by tailwind
+ @tailwind components---->style given by tailwind on the components , basically used in making the design system.
+ @tailwind utilities----->jo hm use krte hae eg bg-white yesb ka defintion file */
+
+ /* @layer base{
+   h1{
+    font-size:30px;
+    color: azure;
+   }
+ } */
+  /* apply use krne se idhr andr hi hmlog tailwind use krskte */
+  @layer base{
+    h1{
+      @apply text-4xl
+             text-blue-200
+    }
+  }
+  /* custom design system using components in tailwind */
+  @layer components{  
+    .bt-primary{
+      @apply border-2 rounded-4xl py-2 px-10 text-white bg-amber-950 border-b-fuchsia-200 ml-3
+        hover:bg-amber-900 hover:scale-105 duration-700
+    }
+  }

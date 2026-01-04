@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Dark-mode_tailwind</title>
+</head>
+<body class="bg-gray-950 dark:bg-amber-200">
+   <h1 class="text-slate-950 text-2xl m-2
+                dark:bg-amber-600
+                not-dark:bg-fuchsia-200">Lets learn how to switch between dark mode and light mode.</h1>
+                <br>
+    <button id="themeSwitch" class="bg-indigo-100 text-black py-2 px-10 rounded-4xl
+                                    dark:bg-indigo-950 dark:text-white duration-600">Light Mode</button>
+    <h1>customized h1</h1>
+    <button class="bt-primary md:bg-fuchsia-500">Button Custom</button>
+</body>
+<script>
+    const darktheme=document.querySelector('#themeSwitch');
+    darktheme.addEventListener('click',function(){
+        document.documentElement.classList.toggle("dark");
+        if(darktheme.innerHTML==='Dark Mode'){
+            darktheme.innerHTML='Light Mode';
+        }
+        else{
+            darktheme.innerHTML='Dark Mode';
+        }
+    },false)
+</script>
+</html>
+
+<!-- using the class:
+dark
+not-dark -->
